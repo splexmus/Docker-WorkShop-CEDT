@@ -101,7 +101,7 @@ Delete the `workflow_dispatch:` placeholder trigger after you add the real ones 
 git add .
 git commit -m "complete docker workshop"
 git push
-# Then open the "Actions" tab on your fork and watch the job run.
+# Then open the "Actions" tab on your fork and watch the job run. 
 ```
 
 When `build-scan-push` goes green, your image is live on Docker Hub at
