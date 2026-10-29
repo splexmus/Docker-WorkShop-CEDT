@@ -5,7 +5,7 @@
 # =============================================================================
 
 # TODO(step-4a): set the builder base image as node:20.11-slim and name the stage "builder".
-FROM node:24.0 AS builder
+FROM node:latest AS builder
 #   Do NOT use `node:latest` — we want reproducible builds across the cohort.
 
 WORKDIR /app
@@ -22,7 +22,7 @@ COPY app/ ./
 # =============================================================================
 
 # TODO(step-4d): set the runtime base image (same tag as step-4a for consistency).
-FROM node:24.0
+FROM node:latest
 
 WORKDIR /app
 
